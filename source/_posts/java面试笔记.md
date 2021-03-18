@@ -14,20 +14,20 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 
 
 
-### 1、面向过程(POP)与面向对象(OOP)
+### 面向过程(POP)与面向对象(OOP)
 
 - 面向过程，强调的是功能行为，以函数为最小单位，考虑怎么做。
 
 - 面向对象，将功能封装进对象，强调具备了功能的对象，以类/对象为最小单位，考虑谁来做。面向对象更加强调运用人类在日常的思维逻辑中采用的思想方法与原则，如抽象、分类、继承、聚合、多态等。易维护、易复用、易扩展，由于面向对象有封装、继承、多态性的特性，可以设计出低耦合的系统，使系统更加灵活、更加易于维护。
 
-### 2、对象内存解析：堆、栈、方法区
+### 对象内存解析：堆、栈、方法区
 - 堆（Heap），此内存区域的唯一目的就是存放对象实例，几乎所有的对象实例都在这里分配内存。这一点在Java虚拟机规范中的描述是：所有的对象实例以及数组都要在堆上分配。 通常所说的栈（Stack），是指虚拟机
 
 - 栈，（Stack）虚拟机栈用于存储局部变量等。局部变量表存放了编译期可知长度的各种基本数据类型（boolean、byte、char 、 short 、 int 、 float 、 long 、double）、对象引用（reference类型，它不等同于对象本身，是对象在堆内存的首地址）。 方法执行完，自动释放。
 
 - 方法区（Method Area），用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。
 
-### 3、局部变量和成员变量的区别
+### 局部变量和成员变量的区别
 
 |              | **成员变量**                     | **局部变量**                             |
 | ------------ | -------------------------------- | ---------------------------------------- |
@@ -36,12 +36,12 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 | 初始化值     | 有默认初始化值                   | 没有默认初始化值，必须显式赋值，方可使用 |
 | 内存加载位置 | 堆空间 或 静态域内               | 栈空间                                   |
 
-### 4、高内聚、低耦合
+### 高内聚、低耦合
 
 - 高内聚 ：类的内部数据操作细节自己完成，不允许外部干涉。
 - 低耦合 ：仅对外暴露少量的方法用于使用。
 
-### 5、四种访问权限修饰符
+### 四种访问权限修饰符
 
 |     修饰符      | 类内部 | 同一个包 | 不同包的子类 | 同一个工程 |
 | :-------------: | :----: | :------: | :----------: | :--------: |
@@ -50,7 +50,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 |    protected    |  Yes   |   Yes    |     Yes      |            |
 |     public      |  Yes   |   Yes    |     Yes      |    Yes     |
 
-### 6、this和super的区别
+### this和super的区别
 
 | No.  | 区别点     | this                                                   | super                                    |
 | ---- | ---------- | ------------------------------------------------------ | ---------------------------------------- |
@@ -58,7 +58,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 | 2    | 调用方法   | 访问本类中的方法，如果本类没有此方法则从父类中继续查找 | 直接访问父类中的方法                     |
 | 3    | 调用构造器 | 调用本类构造器，必须放在构造器的首行                   | 调用父类构造器，必须放在子类构造器的首行 |
 
-### 7、方法重载和重写的区别
+### 方法重载和重写的区别
 
 - 重载：
 
@@ -80,7 +80,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 
   发生在运行时，动态绑定，只有等到方法调用的那一刻，解释运行器才会确定所要调用的具体方法。
 
-### 8、**== ** 操作符与 **equals** 方法
+### ==  操作符与 equals 方法
 
 - == 既可以比较基本类型也可以比较引用类型。对于基本类型就是比较值，对于引用类型就是比较内存地址
 - equals 只能用于比较引用类型，比较是否指向同一个对象。
@@ -89,7 +89,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 - 具体要看自定义类里有没有重写Object的equals方法来判断。
 - 通常情况下，重写equals方法，会比较类中的相应属性是否都相等。
 
-### 9、static
+### static
 
 被修饰后的成员具备以下特点：
 - static可以修饰属性、 方法、代码块、内部类
@@ -101,14 +101,14 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 - 因为不需要实例就可以访问static方法，因此static方法内部不能有this，也不能有super
 - 没有对象的实例时，可以用 "类名.方法名()" 的形式访问由static修饰的类方法
 
-### 10、final
+### final
 - final 标记的类不能被继承。提高安全性，提高程序的可读性。 
 - final 标记的方法不能被子类重写
 - final 标记的变量(成员变量或局部变量)即称为常量，名称大写，且只能被赋值一次
   - final 标记的成员变量必须在声明时或在每个构造器中或代码块中显式赋值，然后才能使用。 
   - 例如：final double MY_PI = 3.14
 
-### 11、抽象类和抽象方法
+### 抽象类和抽象方法
 
 - 用abstract关键字来修饰一个类，这个类叫做抽象类；用abstract来修饰一个方法，该方法叫做抽象方法。 
 - 抽象方法：只有方法的声明，没有方法的实现。以分号结束：比如：public abstract void talk()
@@ -117,7 +117,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 - 不能用abstract修饰变量、代码块、构造器；
 - 不能用abstract修饰私有方法、静态方法、final的方法、final的类。
 
-### 12、interface
+### interface
 
 - 接口(interface)是抽象方法和常量值定义的集合。 
 
@@ -128,7 +128,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
   - 接口中没有构造器。 
   - 接口采用多继承机制。
 
-### 13、接口和抽象类的对比
+### 接口和抽象类的对比
 | No.  | 区别点       | 抽象类                                                       | 接口                                                         |
 | ---- | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 1    | 定义         | 包含抽象方法的类                                             | 主要是抽象方法和全局常量的集合                               |
@@ -141,7 +141,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 | 8    | 实际         | 作为一个模板                                                 | 是作为一个标准或是表示一种能力                               |
 | 9    | 选择         | 如果抽象类和接口都可以使用的话，优先使用接口，因为避免单继承的局限 | 如果抽象类和接口都可以使用的话，优先使用接口，因为避免单继承的局限 |
 
-### 14、抛出异常
+### 抛出异常
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210228172449935.png" />
 
@@ -212,7 +212,7 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
       - keepAliveTime：线程没有任务时最多保持多长时间后会终止
       - …
 
-### 16、多线程的安全问题解决方式：同步机制
+### 多线程的安全问题解决方式：同步机制
 
 - synchornized锁：
   - 同步代码块：synchornized( 对象 ) { 需要被同步的代码; }
@@ -223,25 +223,25 @@ cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
   - 开启锁：lock.lock();
   - 关闭锁：lock.unlock();
 
-### 17、synchronized与Lock的对比
+### synchronized与Lock的对比
 
 - Lock是显式锁（手动开启和关闭锁，别忘记关闭锁），synchronized是隐式锁，出了作用域自动释放
 - Lock只有代码块锁，synchronized有代码块锁和方法锁
 - 使用Lock锁，JVM将花费较少的时间来调度线程，性能更好。并且具有更好的扩展性（提供更多的子类）
 
-### 18、对比String、StringBuffer、StringBuilder
+### 对比String、StringBuffer、StringBuilder
 
 - String(JDK1.0)：不可变字符序列
 - StringBuffer(JDK1.0)：可变字符序列、效率低、线程安全
 - StringBuilder(JDK 5.0)：可变字符序列、效率高、线程不安全
 - 注意：作为参数传递的话，方法内部String不会改变其值，StringBuffer和StringBuilder会改变其值。
 
-### 19、comparable和comparator
+### comparable和comparator
 
 - ccomparable：实现 Comparable 的类必须实现 compareTo(Object obj) 方法，两个对象即通过 compareTo(Object obj) 方法的返回值来比较大小。如果当前对象this大 于形参对象obj，则返回正整数，如果当前对象this小于形参对象obj，则返回负整数，如果当前对象this等于形参对象obj，则返回零。
 - comparator：重写compare(Object o1,Object o2)方法，比较o1和o2的大小：如果方法返回正整数，则表示o1大于o2；如果返回0，表示相等；返回负整数，表示o1小于o2。
 
-### 20、Collection 和 Map 
+### Collection 和 Map 
 
 Collection接口：单列数据，定义了存取一组对象的方法的集合
 
@@ -249,15 +249,14 @@ Collection接口：单列数据，定义了存取一组对象的方法的集合
 	
 		Set：元素无序、不可重复的集合
 
+
 Map接口：双列数据，保存具有映射关系“key-value对”的集合
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210228214649768.png" />
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210228214712019.png" />
 
-
-
-### 21、ArrayList、LinkedList、Vector 比较
+### ArrayList、LinkedList、Vector 比较
 
 - List集合类中元素有序、且可重复，集合中的每个元素都有其对应的顺序索引
 
@@ -279,13 +278,13 @@ Map接口：双列数据，保存具有映射关系“key-value对”的集合
 
   Vector和ArrayList几乎是完全相同的,唯一的区别在于Vector是同步类(synchronized)，属于强同步类。因此开销就比ArrayList要大，访问要慢。正常情况下,大多数的Java程序员使用ArrayList而不是Vector,因为同步完全可以由程序员自己来控制。Vector每次扩容请求其大小的2倍空间，而ArrayList是1.5倍。Vector还有一个子类Stack
 
-### 22、HashSet
+### HashSet
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210302202652221.png" />
 
-<img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210302202714926.png" />![image-20210302203048564](C:%5CUsers%5CHasee%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210302203048564.png)
+<img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210302202714926.png" />
 
-### 23、HashMap
+### HashMap
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210302203048564.png" />
 
@@ -295,17 +294,17 @@ Map接口：双列数据，保存具有映射关系“key-value对”的集合
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210302203414123.png" />
 
-### 24、HashMap与HashTable
+### HashMap与HashTable
 
 <img src="https://gitee.com/xyming108/blog_img/raw/master/post/image-20210302203503624.png" />
 
-### 25、红黑树
+### 红黑树
 
 https://www.yycoding.xyz/post/2014/3/27/introduce-red-black-tree
 
 
 
-### 26、InnoDB，MyISAM区别
+### InnoDB，MyISAM区别
 
 1）InnoDB支持事务，MyISAM不支持，这一点是非常之重要。事务是一种高级的处理方式，如在一些列增删改中只要哪个出错还可以回滚还原，而MyISAM就不可以了。
 2）MyISAM适合查询以及插入为主的应用，InnoDB适合频繁修改以及涉及到安全性较高的应用
