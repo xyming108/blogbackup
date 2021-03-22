@@ -4,7 +4,7 @@ date: 2021-03-18 09:10:47
 tags:
 - 数据库
 - mysql
-categoreies: 数据库
+categories: 数据库
 description: mysql数据库的基本概念，基本查询语句
 top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b8.jpg

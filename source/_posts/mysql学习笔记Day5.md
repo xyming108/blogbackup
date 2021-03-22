@@ -4,7 +4,7 @@ date: 2021-03-18 09:19:23
 tags:
 - mysql
 - 数据库
-categoreies: 数据库
+categories: 数据库
 description: mysql数据库的流程控制、函数
 top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b1.jpg

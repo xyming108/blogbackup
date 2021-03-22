@@ -4,7 +4,7 @@ date: 2021-03-18 09:16:24
 tags:
 - mysql
 - 数据库
-categoreies: 数据库
+categories: 数据库
 description: mysql数据库多表连接查询、子查询、分页查询、联合查询
 top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b6.jpg

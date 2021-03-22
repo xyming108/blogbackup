@@ -4,7 +4,7 @@ date: 2021-03-18 09:18:12
 tags:
 - mysql
 - 数据库
-categoreies: 数据库
+categories: 数据库
 description: mysql数据库的DML语言、DDL语言、TCL语言、视图
 top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b7.jpg

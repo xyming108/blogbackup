@@ -4,7 +4,7 @@ date: 2021-03-18 09:13:47
 tags:
 - mysql
 - 数据库
-categoreies: 数据库
+categories: 数据库
 description: mysql数据库常用函数，排序查询
 top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b2.jpg

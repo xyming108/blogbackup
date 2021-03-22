@@ -4,7 +4,7 @@ date: 2021-03-18 10:06:55
 tags:
 - java
 - 面试
-categoreies: java
+categories: java
 description: java面试笔记整理
 top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
