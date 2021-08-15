@@ -10,7 +10,6 @@ top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b2.jpg
 ---
 
-[TOC]
 
 # Day2
 

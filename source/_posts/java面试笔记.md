@@ -10,10 +10,6 @@ top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b10.jpg
 ---
 
-[TOC]
-
-
-
 ### 面向过程(POP)与面向对象(OOP)
 
 - 面向过程，强调的是功能行为，以函数为最小单位，考虑怎么做。

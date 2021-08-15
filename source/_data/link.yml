@@ -5,15 +5,15 @@
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简单且强大的网誌框架
-    - name: github
+    - name: xyming108
       link: https://github.com/xyming108
-      avatar: http://qogwyulmf.hd-bkt.clouddn.com/github.jpg
-      descr: Xymming108的github
+      avatar: https://img0.baidu.com/it/u=1529409795,609160629&fm=26&fmt=auto&gp=0.jpg
+      descr: xyming108的github
 
 
 
-- class_name: 网站
-  class_desc: 值得推荐的网站
+- class_name: 优秀网站
+  class_desc: 一些值得推荐的网站
   link_list:
     - name: Youtube
       link: https://www.youtube.com/

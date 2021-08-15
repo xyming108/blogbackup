@@ -10,8 +10,6 @@ top_img:
 cover: https://gitee.com/xyming108/blog_img/raw/master/wallpaper/b8.jpg
 ---
 
-[TOC]
-
 # Day1
 
 ### 1、**数据库的相关概念**

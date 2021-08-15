@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-categoreies:
+categories:
 description:
 top_img:
 cover:

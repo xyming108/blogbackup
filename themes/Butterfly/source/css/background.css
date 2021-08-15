@@ -23,29 +23,47 @@
   background-image: none!important;
   /* 采用透明的方式取消，最后一个0表示透明 */
   background-color: rgba(255, 255, 255, 0);
-  
 }
 #page-header.post-bg:before {
   /*透明*/
   background-color: rgba(0, 0, 0, 0);
 }
+#page-header.full_page:before {
+  background-color: rgba(0, 0, 0, 0);
+}
+#page-header.not-home-page:before {
+  background-color: rgba(0, 0, 0, 0);
+}
+#web_bg:before {
+  background-color: rgba(0, 0, 0, 0);
+}
 
+/*Follow Me*/
+#aside-content .card-info #card-info-btn {
+  background-color: rgba(255, 130, 71, 0.9);;
+}
+
+
+/*顶上横杠*/
+/*#page-header.nav-fixed #nav {
+  background-color: rgba(255, 255, 255, 0.5);
+}*/
 
 /*侧边栏透明度*/
 #aside-content .card-widget {
-	opacity: 0.9;
-	/*background-color: rgba(255, 255, 255, 0.8);*/
+	opacity: 0.85;
+	/*background-color: rgba(244, 244, 234, 0.9);*/
 }
 /*主页文章透明度*/
 #recent-posts > .recent-post-item {
-	opacity: 0.9;
-	/*background-color: rgba(255, 255, 255, 0.8);*/
+	opacity: 0.85;
+    /*background-color: rgba(244, 244, 234, 0.9);*/
 }
 
 /*文章内部透明度*/
 .layout > div:first-child:not(.recent-posts) {
-	opacity: 0.9;
-	/*background-color: rgba(255, 255, 255, 0.8);*/
+	opacity: 0.85;
+    /*background-color: rgba(244, 244, 234, 0.9);*/
 }
 
 /*右侧功能键透明度*/
@@ -61,7 +79,7 @@
 
 /*目录条*/
 #aside-content #card-toc .toc-content .toc-link.active {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 

@@ -4,16 +4,16 @@
 
 # Site
 title: Xym's blogs
-subtitle: Patience is passions tamed
+subtitle:
 description: 写代码是热爱,写到世界充满爱
 keywords:
-author: Xyming
+author: Xym
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url:  http://xyming108.github.io/
+url: http://xyming108.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,7 +104,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:xyming108/xyming108.github.io.git
+  repo:
+    github: git@github.com:xyming108/xyming108.github.io.git
+    gitee: git@gitee.com:xyming108/xyming108.git
+    coding: git@e.coding.net:xyming108/xyming108/xyming108.git
   branch: master
 
 
@@ -135,9 +138,37 @@ live2d:
   model:
     use: live2d-widget-model-shizuku
   display:
-    position: left
-    width: 150
-    height: 300
+    position: right
+    hOffset: 35   #x轴偏移量
+    vOffset: 20  #y轴偏移量
+    width: 100
+    height: 200
   mobile:
     show: true
   opacity: 0.8;
+
+aplayer:
+  meting: true
+  asset_inject: false
+
+douban:
+  user: xyming108
+  builtin: true
+  movie:
+    title: '电影'
+    quote: 'quote：让一个人置身于变幻无穷的环境中，让他与数不尽或远或近的人物错身而过，让他与整个世界发生关系：这就是电影的意义。——安德烈·塔可夫斯基'
+    meta: true
+    comments: true
+    top_img: 
+    aside: true
+    path: movies
+    limit: 5
+  book:
+    title: '书屋'
+    quote: 'quote：读书而不思考，等于吃饭而不消化。　——波尔克'
+    meta: true
+    comments: true
+    aside: true
+    path: books
+    limit: 5
+  timeout: 10000 

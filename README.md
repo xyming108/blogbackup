@@ -6,5 +6,7 @@ hexo s：本地测试
 
 hexo g：生成静态文件
 
-hexo d：部署到github上
+hexo deploy：部署到github上
+
+hexo new 文章名称：新建md文件
 
