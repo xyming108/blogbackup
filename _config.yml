@@ -4,7 +4,7 @@
 
 # Site
 title: Xym's blogs
-subtitle:
+subtitle: O(∩_∩)O哈哈~ welcome to my blog
 description: 写代码是热爱,写到世界充满爱
 keywords:
 author: Xym
@@ -107,7 +107,7 @@ deploy:
   repo:
     github: git@github.com:xyming108/xyming108.github.io.git
     gitee: git@gitee.com:xyming108/xyming108.git
-    coding: git@e.coding.net:xyming108/xyming108/xyming108.git
+    # coding: git@e.coding.net:xyming108/xyming108/xyming108.git
   branch: master
 
 
@@ -140,7 +140,7 @@ live2d:
   display:
     position: right
     hOffset: 35   #x轴偏移量
-    vOffset: 20  #y轴偏移量
+    vOffset:   #y轴偏移量
     width: 100
     height: 200
   mobile:
@@ -172,3 +172,4 @@ douban:
     path: books
     limit: 5
   timeout: 10000 
+

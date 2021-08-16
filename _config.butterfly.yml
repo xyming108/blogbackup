@@ -13,7 +13,6 @@ menu:
   分类: /categories/ || fas fa-folder-open
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
-  说说: /artitalk/ || fas fa-comment
   照片: /Gallery/ || fas fa-images
   音乐: /music/ || fas fa-music
   电影: /movies/ || fas fa-video
@@ -905,7 +904,6 @@ inject:
   bottom:
     - <script type="text/javascript" src="/js/fairyDustCursor.js"></script>
     - <div class="aplayer no-destroy" data-id="8120905145" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" data-theme="#1ebf2b" mutex="true" muted></div>
-    - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/title.js"></script>#樱花
     # - <script src="xxxx"></script>
 
 # CDN

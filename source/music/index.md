@@ -5,7 +5,7 @@ type: "music"
 ---
 
 # 我的乐库
-{% 
-meting "8120905145" "tencent" "playlist" "autoplay" "theme:#1ebf2b" "mutex:true" "preload:auto" "order:random"
-%}
+
+
+{% meting "8120905145" "tencent" "playlist" "autoplay" "theme:#1ebf2b" "mutex:true" "preload:auto" "order:random" %}
 
